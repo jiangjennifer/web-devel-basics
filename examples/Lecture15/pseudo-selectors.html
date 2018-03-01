@@ -5,36 +5,58 @@
 <title>Pseudo Class Selectors</title>
 <style>
 /* Styles go here. */
+/* 1. change to button 
+   2. stress facebook page 
+   3. odd div become grey 
+   4. the 5th one has hover behavior
+*/
 header li {
   list-style: none;
 }
-a:link, a:visited {
+
+a:link {
   text-decoration: none;
   background-color: green;
-  border: 1px solid blue;
-  color: black;
   display: block;
   width: 200px;
-  text-align: center;
-  margin-bottom: 1px;
+  color: yellow;
+  margin-top: 5px;
+  text-align:  center;
+  border: 3px solid orange;
+}
+
+a:visited {
+  background-color: lightblue;
+  color: pink;
 }
 
 a:hover, a:active {
-  background-color: red;
-  color: purple;
+  color: red;
+  background-color: yellow;
 }
 
-header li:nth-child(3) {
-  font-size: 24px;
+li:nth-child(3) {
+  font-size: 25px;
 }
 
 section div:nth-child(odd) {
-  background-color: gray;
+  background-color: pink;
 }
 
-section div:nth-child(4):hover {
-  background-color: green;
-  cursor: pointer;
+section div {
+  width: 50px;
+}
+
+section {
+  margin: auto;
+  padding: 100px;
+  border: 3px solid purple;
+}
+
+div:nth-child(5):hover {
+  background-color: lightblue;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 </style>
@@ -75,4 +97,3 @@ section div:nth-child(4):hover {
 
 </body>
 </html>
-
