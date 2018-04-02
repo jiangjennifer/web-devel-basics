@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Responsive design </title>
+		<style>
+			* {
+					box-sizing:  border-box;
+				}
+			p {
+					float: left;
+					height: 150px;
+					border: solid black 2px;
+					width: 90%;
+					background: pink;
+					margin-left: auto;
+					margin-right: auto;
+			/*	margin: auto;*/
+					text-align: center;
+					font-size: medium;
+					font-weight: bold;
+					font-family: serif, sans-serif;
+					font-style: italic;
+				}
+
+			/* Large screen device */
+			@media (min-width: 1200px) {
+				.col-lg-3 {
+					width: 25%;
+					border: green solid 3px;
+				}
+			}
+			@media (max-width: 1199px) and (min-width: 662px) {
+				.col-md-6 {
+					border: blue solid 3px;
+					width: 50%;
+				}
+			}
+		</style>
+	</head>
+	<body style="width:100%">
+		<p class="col-lg-3 col-md-6"> Para 1 </p>
+		<p class="col-lg-3 col-md-6"> Para 2 </p>
+		<p class="col-lg-3 col-md-6"> Para 3 </p>
+		<p class="col-lg-3 col-md-6"> Para 4 </p>
+		<p class="col-lg-3 col-md-6"> Para 5 </p>
+		<p class="col-lg-3 col-md-6"> Para 6 </p>
+		<p class="col-lg-3 col-md-6"> Para 7 </p>
+		<p class="col-lg-3 col-md-6"> Para 8 </p>
+		<p class="col-lg-3 col-md-6"> Para 9 </p>
+		<p class="col-lg-3 col-md-6"> Para 10 </p>
+		<p class="col-lg-3 col-md-6"> Para 11 </p>
+		<p class="col-lg-3 col-md-6"> Para 12 </p>
+</html>
