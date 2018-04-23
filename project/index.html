@@ -25,7 +25,7 @@
 						</p>
 					</div>
 
-					<button type="button" class="navbar-toggle collapased" data-toggle="collapse" data-target="#collapsable-nav">
+					<button type="button" class="navbar-toggle collapased" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 						<!-- For screen reader only  -->
 						<span class="sr-only">Toggle navigation</span>
 						<!-- below three lines are just putting horizontal lines in the button -->
@@ -34,7 +34,36 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div>
-			</div>
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="menu-categories.html">
+								<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-certificate"></span>
+								<br class="hidden-xs"> Awards
+							</a>
+						</li>
+						<li id="phone" class="hidden-xs">
+							<a href="tel:401-602-5008">
+								<span>401-602-5008</span>
+							</a>
+							<div> *We Deliver </div>
+						</li>
+
+					</div><!-- .collapse .navbar-collapse -->
+
+
+
 		</nav>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
