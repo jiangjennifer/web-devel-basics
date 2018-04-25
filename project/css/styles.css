@@ -89,3 +89,40 @@ body {
 .navbar-header button.navbar-toggle {
 	clear: both;
 }
+
+/** Large devide ONLY **/
+@media (min-width: 1200px) {
+
+}
+
+/** Medium device ONLY **/
+@media (max-width: 1199px) and (min-width: 992px) {
+	#logo-img {
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+}
+
+/** Small device ONLY **/
+@media (max-width: 991px) and (min-width: 768px) {
+	/* Header */
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	.navbar-brand h1 { /* Restaurant name */
+		padding-top: 10px;
+		font-size: 5vw; /* 1vw = 1% of viewport width */
+	}
+
+	.navbar-brand p { /*Kosher Cert */
+		font-size: 0.6em;
+		margin-top: 12px;
+	}
+
+	.navbar-brand img { /* Star-K */
+		height: 20px;
+	}
+}
