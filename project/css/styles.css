@@ -106,6 +106,9 @@ body {
 
 /** Small device ONLY **/
 @media (max-width: 991px) and (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
 	/* Header */
 	.navbar-brand {
 		padding-top: 10px;
@@ -125,4 +128,14 @@ body {
 	.navbar-brand img { /* Star-K */
 		height: 20px;
 	}
+
+	#collapsable-nav a { /*Collapsed nav menu glyph */
+		font-size: 1.2em;
+	}
+
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
+
 }
